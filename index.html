@@ -12,324 +12,195 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:Arial,Helvetica,sans-serif;
-scroll-behavior:smooth;
+font-family:Arial, Helvetica, sans-serif;
 }
 
 body{
-background:#f5f8fb;
+background:#f5f9fc;
 color:#333;
 }
 
 header{
-background:#0a8ea0;
+background:#00897B;
 color:white;
 padding:20px;
-position:sticky;
-top:0;
-z-index:1000;
+text-align:center;
 }
 
-nav{
-display:flex;
-justify-content:space-between;
-align-items:center;
+header img{
+width:140px;
+height:140px;
+border-radius:50%;
+background:white;
+padding:8px;
+margin-bottom:15px;
 }
 
-.logo{
-font-size:22px;
-font-weight:bold;
+header h1{
+font-size:36px;
 }
 
-nav ul{
-display:flex;
-list-style:none;
-gap:20px;
-}
-
-nav a{
-color:white;
-text-decoration:none;
-font-weight:bold;
+header p{
+font-size:20px;
+margin-top:10px;
 }
 
 .hero{
-background:linear-gradient(rgba(0,140,170,.75),rgba(0,140,170,.75)),
-url("https://images.unsplash.com/photo-1586773860418-d37222d8fce3?auto=format&fit=crop&w=1200&q=80");
-background-size:cover;
-background-position:center;
-color:white;
+padding:50px 20px;
 text-align:center;
-padding:120px 20px;
 }
 
-.hero h1{
-font-size:48px;
-margin-bottom:20px;
+.hero h2{
+font-size:42px;
+color:#00897B;
+margin-bottom:15px;
 }
 
 .hero p{
-font-size:22px;
-margin-bottom:35px;
+font-size:20px;
+line-height:1.7;
+margin-bottom:30px;
 }
 
-.btn{
-background:white;
-color:#0a8ea0;
-padding:16px 35px;
-border-radius:50px;
-text-decoration:none;
-font-weight:bold;
+.button{
 display:inline-block;
+padding:15px 30px;
+margin:10px;
+background:#00897B;
+color:white;
+text-decoration:none;
+border-radius:30px;
+font-size:18px;
+font-weight:bold;
+}
+
+.button:hover{
+background:#00695c;
 }
 
 section{
-padding:70px 20px;
-max-width:1100px;
+padding:60px 20px;
+max-width:1000px;
 margin:auto;
 }
 
 h2{
-text-align:center;
-color:#0a8ea0;
-margin-bottom:25px;
+color:#00897B;
+margin-bottom:20px;
 font-size:34px;
-}
-
-.about{
-font-size:19px;
-line-height:1.8;
-text-align:center;
 }
 
 .services{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
 gap:20px;
-margin-top:40px;
 }
 
 .card{
 background:white;
 padding:25px;
 border-radius:15px;
-box-shadow:0 8px 20px rgba(0,0,0,.08);
+box-shadow:0 0 12px rgba(0,0,0,.1);
 text-align:center;
-}
-
-.card h3{
-margin-bottom:15px;
-color:#0a8ea0;
 }
 
 footer{
-background:#0a8ea0;
+background:#00897B;
 color:white;
 text-align:center;
-padding:25px;
-margin-top:60px;
+padding:30px;
+margin-top:40px;
 }
 
 </style>
+
 </head>
 
 <body>
 
 <header>
 
-<nav>
+<img src="3F754AAE-42A2-4EC8-A2E9-E9939A0A56BD.png">
 
-<div class="logo">
-Tagudin Mobile Clinic & Wellness Center
-</div>
-
-<ul>
-<li><a href="#about">About</a></li>
-<li><a href="#services">Services</a></li>
-<li><a href="#contact">Contact</a></li>
-</ul>
-
-</nav>
-
-</header>
-
-<section class="hero">
-
-<h1>Tagudin Mobile Clinic<br>and Wellness Center</h1>
+<h1>Tagudin Mobile Clinic and Wellness Center</h1>
 
 <p>Better Health, Better Soul</p>
 
-<a href="#contact" class="btn">
-Book an Appointment
-</a>
+</header>
 
-</section>
-<section id="about">
+<div class="hero">
 
-<h2>About Us</h2>
+<h2>Quality Healthcare You Can Trust</h2>
 
-<p class="about">
-
-Tagudin Mobile Clinic and Wellness Center is committed to providing quality,
-affordable, and compassionate healthcare services to individuals and families
-in Tagudin, Ilocos Sur, and nearby communities.
-
-Our mission is to deliver accessible medical care through our clinic and mobile
-healthcare services while promoting wellness and disease prevention.
-
+<p>
+Providing compassionate, affordable and quality healthcare for every family in Tagudin and nearby communities.
 </p>
 
-</section>
+<a class="button" href="tel:+639999578583">Call Now</a>
 
-<section id="services">
+<a class="button" href="https://www.facebook.com/share/17xaYNGFPk/?mibextid=wwXIfr">Facebook</a>
+
+<a class="button" href="https://maps.app.goo.gl/dPFDdEMNNWjsm1K29?g_st=ic">Directions</a>
+
+</div>
+
+<section>
 
 <h2>Our Services</h2>
 
 <div class="services">
 
 <div class="card">
-<h3>General Consultation</h3>
-<p>Professional medical consultation for children and adults.</p>
+<h3>Medical Consultation</h3>
 </div>
 
 <div class="card">
-<h3>Clinical Laboratory</h3>
-<p>Complete laboratory examinations with accurate and reliable results.</p>
+<h3>Laboratory Services</h3>
 </div>
 
 <div class="card">
-<h3>Mobile Clinic</h3>
-<p>Healthcare services delivered directly to communities.</p>
+<h3>Ultrasound</h3>
+</div>
+
+<div class="card">
+<h3>ECG</h3>
 </div>
 
 <div class="card">
 <h3>Vaccination</h3>
-<p>Routine and recommended immunization services.</p>
 </div>
 
 <div class="card">
 <h3>Medical Certificate</h3>
-<p>Medical examinations and issuance of medical certificates.</p>
-</div>
-
-<div class="card">
-<h3>Health Check-up</h3>
-<p>Routine health assessments and preventive care.</p>
 </div>
 
 </div>
 
 </section>
-<section id="leadership">
 
-<h2>Medical Director</h2>
+<section>
 
-<div class="card">
+<h2>Clinic Hours</h2>
 
-<h3>Dra. Johanna Dimino Tipallo</h3>
+<p><b>Monday - Saturday</b><br>6:00 AM - 6:00 PM</p>
 
-<p>
+<br>
 
-Founder & Medical Director
-
-</p>
-
-<p>
-
-Leading Tagudin Mobile Clinic and Wellness Center since 2016 with a commitment to compassionate, accessible, and quality healthcare for every patient.
-
-</p>
-
-</div>
-
-</section>
-
-<section id="contact">
-
-<h2>Contact Us</h2>
-
-<div class="services">
-
-<div class="card">
-
-<h3>📍 Address</h3>
-
-<p>
-
-Bio, Tagudin, Ilocos Sur, Philippines
-
-</p>
-
-</div>
-
-<div class="card">
-
-<h3>📞 Phone</h3>
-
-<p>
-
-+63 999 957 8583
-
-</p>
-
-</div>
-
-<div class="card">
-
-<h3>📧 Email</h3>
-
-<p>
-
-mcwc.lab@gmail.com
-
-</p>
-
-</div>
-
-<div class="card">
-
-<h3>📘 Facebook</h3>
-
-<p>
-
-Tagudin Mobile Clinic and Wellness Center
-
-</p>
-
-</div>
-
-</div>
+<p><b>Sunday</b><br>1:00 PM - 6:00 PM</p>
 
 </section>
 
 <footer>
 
-<h3>
+<h3>Tagudin Mobile Clinic and Wellness Center</h3>
 
-Tagudin Mobile Clinic and Wellness Center
+<p>Bio, Tagudin, Ilocos Sur</p>
 
-</h3>
+<p>📞 +63 999 957 8583</p>
 
-<p>
-
-Better Health, Better Soul
-
-</p>
-
-<p>
-
-Established 2016
-
-</p>
-
-<p>
-
-© 2026 Tagudin Mobile Clinic and Wellness Center
-
-</p>
+<p>✉ mcwc.lab@gmail.com</p>
 
 </footer>
 
 </body>
-
 </html>
