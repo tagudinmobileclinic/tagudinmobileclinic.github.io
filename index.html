@@ -6,308 +6,428 @@
 
 <title>Tagudin Mobile Clinic and Wellness Center</title>
 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
 <style>
 
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:Arial, Helvetica, sans-serif;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
 }
 
 body{
-background:#f5f9fc;
+background:#f5f9f8;
 color:#333;
 }
 
 header{
-background:#00897B;
+background:linear-gradient(135deg,#00897B,#26A69A);
 color:white;
-padding:20px;
 text-align:center;
+padding:80px 20px;
 }
 
 header img{
-width:140px;
-height:140px;
+width:180px;
+height:180px;
 border-radius:50%;
 background:white;
-padding:8px;
-margin-bottom:15px;
+padding:12px;
+box-shadow:0 10px 30px rgba(0,0,0,.25);
+margin-bottom:25px;
 }
 
 header h1{
-font-size:36px;
+font-size:42px;
+line-height:1.2;
+margin-bottom:15px;
 }
 
 header p{
-font-size:20px;
-margin-top:10px;
+font-size:22px;
+opacity:.95;
+}
+
+nav{
+position:sticky;
+top:0;
+background:white;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 25px;
+box-shadow:0 3px 15px rgba(0,0,0,.08);
+z-index:1000;
+}
+
+.logo{
+font-size:32px;
+font-weight:700;
+color:#00897B;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:25px;
+}
+
+nav a{
+text-decoration:none;
+color:#333;
+font-weight:600;
+transition:.3s;
+}
+
+nav a:hover{
+color:#00897B;
 }
 
 .hero{
-padding:50px 20px;
+max-width:1100px;
+margin:auto;
+padding:70px 20px;
 text-align:center;
 }
 
 .hero h2{
-font-size:42px;
+font-size:52px;
 color:#00897B;
-margin-bottom:15px;
+margin-bottom:20px;
 }
 
 .hero p{
-font-size:20px;
-line-height:1.7;
-margin-bottom:30px;
+font-size:22px;
+line-height:1.8;
+margin-bottom:35px;
 }
 
 .button{
 display:inline-block;
-padding:15px 30px;
-margin:10px;
 background:#00897B;
 color:white;
+padding:15px 30px;
+border-radius:50px;
 text-decoration:none;
-border-radius:30px;
-font-size:18px;
-font-weight:bold;
+font-weight:600;
+margin:8px;
+transition:.3s;
+box-shadow:0 10px 25px rgba(0,137,123,.25);
 }
 
 .button:hover{
-background:#00695c;
+transform:translateY(-4px);
+background:#00695C;
 }
 
 section{
-padding:60px 20px;
-max-width:1000px;
+padding:80px 20px;
+max-width:1200px;
 margin:auto;
 }
 
-h2{
+section h2{
+font-size:40px;
 color:#00897B;
-margin-bottom:20px;
-font-size:34px;
+margin-bottom:40px;
+text-align:center;
 }
 
-.services{
+.cards{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:20px;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:25px;
 }
 
 .card{
 background:white;
-padding:25px;
-border-radius:15px;
-box-shadow:0 0 12px rgba(0,0,0,.1);
-text-align:center;
+padding:30px;
+border-radius:20px;
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+.card h3{
+margin-bottom:15px;
+font-size:24px;
+color:#00897B;
+}
+
+.card p{
+line-height:1.8;
 }
 
 footer{
-background:#00897B;
+background:#00695C;
 color:white;
 text-align:center;
-padding:30px;
-margin-top:40px;
-}
-.card{
-background:white;
-padding:20px;
-margin:20px auto;
-border-radius:20px;
-max-width:350px;
-box-shadow:0 8px 20px rgba(0,0,0,.12);
-}
-.navbar{
-    position:sticky;
-    top:0;
-    background:#ffffff;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:15px 20px;
-    box-shadow:0 2px 10px rgba(0,0,0,0.1);
-    z-index:1000;
+padding:40px;
+margin-top:60px;
 }
 
-.navbar h2{
-    margin:0;
-    color:#00897B;
-    font-size:24px;
+@media(max-width:768px){
+
+header h1{
+font-size:34px;
 }
 
-.menu{
-    display:flex;
-    gap:15px;
+.hero h2{
+font-size:34px;
 }
 
-.menu a{
-    text-decoration:none;
-    color:#444;
-    font-size:15px;
-    font-weight:bold;
+.hero p{
+font-size:18px;
 }
 
-.menu a:hover{
-    color:#00897B;
+nav{
+flex-direction:column;
+gap:10px;
 }
+
+nav ul{
+flex-wrap:wrap;
+justify-content:center;
+gap:15px;
+}
+
+}
+
 </style>
 
 </head>
 
 <body>
-<body>
+<nav>
+    <div class="logo">MCWC</div>
 
-<nav class="navbar">
-    <h2>MCWC</h2>
-
-    <div class="menu">
-        <a href="#home">Home</a>
-        <a href="#services">Services</a>
-        <a href="#hours">Hours</a>
-        <a href="#visit">Visit</a>
-    </div>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#hours">Hours</a></li>
+        <li><a href="#visit">Visit</a></li>
+    </ul>
 </nav>
 
 <header id="home">
-<header>
 
-<img src="3F754AAE-42A2-4EC8-A2E9-E9939A0A56BD.png">
+    <img src="3F754AAE-42A2-4EC8-A2E9-E9939A0A56BD.png" alt="MCWC Logo">
 
-<h1>Tagudin Mobile Clinic and Wellness Center</h1>
+    <h1>Tagudin Mobile Clinic<br>and Wellness Center</h1>
 
-<p>Better Health, Better Soul</p>
+    <p>Better Health, Better Soul</p>
 
 </header>
 
 <div class="hero">
 
-<h2>Quality Healthcare You Can Trust</h2>
+    <h2>Quality Healthcare You Can Trust</h2>
 
+    <p>
+        Providing compassionate, affordable and quality healthcare
+        for every family in Tagudin and nearby communities.
+    </p>
+
+    <a class="button" href="tel:+639999578583">
+        📞 Call Now
+    </a>
+
+    <a class="button"
+    href="https://www.facebook.com/TagudinMobileClinicandWellnessCenter"
+    target="_blank">
+        👍 Facebook
+    </a>
+
+    <a class="button"
+    href="https://maps.app.goo.gl/PASTE_YOUR_LINK_HERE"
+    target="_blank">
+        📍 Google Maps
+    </a>
+
+</div>
+<section id="services">
+
+<h2>Our Services</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>🩺 General Consultation</h3>
 <p>
-Providing compassionate, affordable and quality healthcare for every family in Tagudin and nearby communities.
+Professional medical consultation for children and adults.
 </p>
-
-<a class="button" href="tel:+639999578583">Call Now</a>
-
-<a class="button" href="https://www.facebook.com/share/17xaYNGFPk/?mibextid=wwXIfr">Facebook</a>
-
-<a class="button" href="https://maps.app.goo.gl/PASTE_MO_DITO_ANG_BUONG_LINK">
-    Open Google Maps
-</a>
 </div>
 
-<section>
+<div class="card">
+<h3>🧪 Laboratory Services</h3>
+<p>
+Complete laboratory examinations including CBC, Urinalysis, Blood Chemistry,
+Lipid Profile, HbA1c, Electrolytes, and many more.
+</p>
+</div>
+
+<div class="card">
+<h3>📄 Medical Certificate</h3>
+<p>
+Medical certificates for employment, school, travel, and other requirements.
+</p>
+</div>
+
+<div class="card">
+<h3>💉 Minor Procedures</h3>
+<p>
+Wound dressing, injections, nebulization, ear irrigation,
+suture removal, and other minor procedures.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="hours">
 
 <h2>Clinic Hours</h2>
 
-<p><b>Monday - Saturday</b><br>6:00 AM - 6:00 PM</p>
+<div class="cards">
 
-<br>
+<div class="card">
 
-<p><b>Sunday</b><br>1:00 PM - 6:00 PM</p>
+<h3>Monday – Saturday</h3>
 
-</section>
+<p>
+6:00 AM – 6:00 PM
+</p>
 
-<section>
-    <h2>Our Services</h2>
+</div>
 
-    <div class="card">
-        <h3>General Consultation</h3>
-        <p>Professional medical consultation for children and adults.</p>
-    </div>
+<div class="card">
 
- <div class="card" onclick="toggleService('lab')">
+<h3>Sunday</h3>
 
-<h3>🧪 Laboratory Services</h3>
-
-<p>Tap to view all laboratory tests</p>
-
-<div id="lab" style="display:none; margin-top:20px; text-align:left;">
-
-<ul>
-
-<li>CBC with Platelet Count</li>
-<li>PT / INR</li>
-<li>APTT</li>
-<li>ESR</li>
-<li>Blood Typing</li>
-<li>Peripheral Blood Smear</li>
-
-<li>Urinalysis</li>
-<li>Fecalysis</li>
-<li>FOBT</li>
-<li>KOH</li>
-<li>AFB (Sputum)</li>
-<li>Gram Stain</li>
-
-<li>FBS</li>
-<li>RBS</li>
-<li>BUN</li>
-<li>Creatinine</li>
-<li>Uric Acid</li>
-<li>SGOT / AST</li>
-<li>SGPT / ALT</li>
-<li>Cholesterol</li>
-<li>Triglycerides</li>
-<li>Lipid Profile</li>
-<li>Sodium</li>
-<li>Potassium</li>
-<li>Calcium</li>
-<li>Magnesium</li>
-<li>Phosphorus</li>
-<li>HbA1c</li>
-
-</ul>
+<p>
+1:00 PM – 6:00 PM
+</p>
 
 </div>
 
 </div>
 
-    <div class="card">
-        <h3>Medical Certificate</h3>
-        <p>Medical certificates for school, work and travel.</p>
-    </div>
-
-    <div class="card">
-        <h3>Minor Procedures</h3>
-        <p>Wound dressing, injections and other minor procedures.</p>
-    </div>
 </section>
+<section id="visit">
 
-<section>
-    <h2>Clinic Hours</h2>
+<h2>Visit Us</h2>
 
-    <p><strong>Monday - Saturday</strong><br>
-    6:00 AM - 6:00 PM</p>
+<div class="cards">
 
-    <p><strong>Sunday</strong><br>
-    1:00 PM - 6:00 PM</p>
-</section>
+<div class="card">
 
-<section>
-    <h2>Visit Us</h2>
+<h3>📍 Address</h3>
 
-    <p>Bio, Tagudin, Ilocos Sur</p>
+<p>
+Bio, Tagudin, Ilocos Sur, Philippines
+</p>
 
- <a class="button" href="https://maps.app.goo.gl/YOUR_REAL_LINK">
-    Open Google Maps
-
+<a class="button"
+href="https://maps.app.goo.gl/dPFDdEMNNWjsm1K29?g_st=ic"
+target="_blank">
+Open Google Maps
 </a>
+
+</div>
+
+<div class="card">
+
+<h3>☎ Contact Information</h3>
+
+<p>
+📞 +63 999 957 8583
+</p>
+
+<p>
+✉ mcwc.lab@gmail.com
+</p>
+
+<a class="button"
+href="https://www.facebook.com/share/17xaYNGFPk/?mibextid=wwXIfr"
+target="_blank">
+Visit our Facebook Page
+</a>
+
+</div>
+
+</div>
+
 </section>
 
- <script>
-function toggleService(id) {
-    var x = document.getElementById(id);
+<section id="doctors">
 
-    if (x.style.display === "none" || x.style.display === "") {
-        x.style.display = "block";
-    } else {
-        x.style.display = "none";
-    }
-}
-</script>
+<h2>Our Doctors</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>👩‍⚕️ Dra. Johanna D. Tipallo</h3>
+
+<p>
+General Physician
+</p>
+
+<p>
+Providing compassionate and quality healthcare for the community.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>👨‍⚕️ Visiting Specialists</h3>
+
+<p>
+Additional doctors and specialists will be added soon.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<h3>Tagudin Mobile Clinic and Wellness Center</h3>
+
+<p>
+Better Health, Better Soul
+</p>
+
+<p>
+Bio, Tagudin, Ilocos Sur
+</p>
+
+<p>
+☎ +63 999 957 8583
+</p>
+
+<p>
+✉ mcwc.lab@gmail.com
+</p>
+
+<p style="margin-top:20px;font-size:14px;">
+© 2026 Tagudin Mobile Clinic and Wellness Center. All Rights Reserved.
+</p>
+
+</footer>
+
 </body>
-
 </html>
