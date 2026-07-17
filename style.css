@@ -276,4 +276,53 @@ footer{
 footer p{
     margin:0;
 }
+/* ===== Responsive Navigation ===== */
+
+.menu-toggle{
+    display:none;
+    background:none;
+    border:none;
+    font-size:32px;
+    cursor:pointer;
+    color:#009688;
+}
+
+#navMenu{
+    display:flex;
+    gap:28px;
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+
+@media (max-width:768px){
+
+    .menu-toggle{
+        display:block;
+    }
+
+    #navMenu{
+        display:none;
+        flex-direction:column;
+        width:100%;
+        margin-top:15px;
+        text-align:center;
+    }
+
+    #navMenu.active{
+        display:flex;
+    }
+
+    nav{
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        flex-wrap:wrap;
+    }
+
+    #navMenu li{
+        padding:12px 0;
+        border-top:1px solid #e5e5e5;
+    }
+}
 
