@@ -355,3 +355,72 @@ footer p{
         text-align:center;
     }
 }
+/* ==========================
+   OUR MEDICAL TEAM
+========================== */
+
+.team-section{
+    max-width:1200px;
+    margin:auto;
+    padding:60px 20px;
+}
+
+.team-section h2{
+    color:#0b5fa5;
+    text-align:center;
+    margin:50px 0 30px;
+    font-size:2rem;
+}
+
+.team-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:25px;
+    margin-bottom:30px;
+}
+
+.doctor-card{
+    background:#fff;
+    border-radius:18px;
+    padding:30px 20px;
+    text-align:center;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.doctor-card:hover{
+    transform:translateY(-8px);
+}
+
+.doctor-photo{
+    width:120px;
+    height:120px;
+    margin:0 auto 20px;
+    border-radius:50%;
+    background:#eaf5ff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:60px;
+}
+
+.doctor-card h3{
+    color:#0b5fa5;
+    margin-bottom:10px;
+}
+
+.specialty{
+    color:#16a34a;
+    font-weight:bold;
+    margin-bottom:5px;
+}
+
+.position{
+    color:#666;
+    font-style:italic;
+    margin-bottom:15px;
+}
+
+.doctor-card p{
+    line-height:1.6;
+}
