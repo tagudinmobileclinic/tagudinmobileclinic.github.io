@@ -173,7 +173,7 @@ Providing compassionate, affordable and quality healthcare for every family in T
         <p>Professional medical consultation for children and adults.</p>
     </div>
 
-   <div class="card" onclick="toggleService('lab')">
+ <div class="card" onclick="toggleService('lab')">
 
 <h3>🧪 Laboratory Services</h3>
 
@@ -251,11 +251,12 @@ Providing compassionate, affordable and quality healthcare for every family in T
 
 </a>
 </section>
-<script>
+
+ <script>
 function toggleService(id) {
     var x = document.getElementById(id);
 
-    if (x.style.display === "none") {
+    if (x.style.display === "none" || x.style.display === "") {
         x.style.display = "block";
     } else {
         x.style.display = "none";
@@ -263,4 +264,5 @@ function toggleService(id) {
 }
 </script>
 </body>
+
 </html>
