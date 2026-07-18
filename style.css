@@ -88,28 +88,33 @@ nav{
 /* HERO */
 
 .hero{
+    position:relative;
     min-height:100vh;
-    background:
-        linear-gradient(rgba(0,70,90,.40), rgba(0,70,90,.40)),
-        url("3D6C0023-D89A-4B34-A964-53F79D883536.png");
-    background-size:cover;
-    background-position:center 75%;
-    background-repeat:no-repeat;
     display:flex;
     align-items:center;
+    overflow:hidden;
+    background:
+        linear-gradient(to right,
+            rgba(18,52,64,.72) 0%,
+            rgba(18,52,64,.60) 35%,
+            rgba(18,52,64,.25) 60%,
+            rgba(18,52,64,.10) 100%),
+        url("3D6C0023-D89A-4B34-A964-53F79D883536.png");
+    background-size:cover;
+    background-position:center bottom;
+    background-repeat:no-repeat;
 }
-
 .hero-overlay{
     width:100%;
-    padding:80px 0;
+    padding:120px 0 80px;
 }
 
 .hero-content{
     color:#fff;
-    text-align:center;
-    max-width:780px;
-    margin:auto;
-    padding:0 20px;
+    text-align:left;
+    max-width:600px;
+    margin:0;
+    padding:0;
 }
 
 .hero-content h1{
@@ -130,7 +135,10 @@ nav{
 }
 
 .hero-buttons{
-    gap:18px;
+    display:flex;
+    justify-content:flex-start;
+    gap:20px;
+    flex-wrap:wrap;
 }
 
 .btn{
