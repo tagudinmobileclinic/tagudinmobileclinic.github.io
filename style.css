@@ -1,11 +1,16 @@
 /* ==========================================
-   TAGUDIN MOBILE CLINIC V3
+   TAGUDIN MOBILE CLINIC & WELLNESS CENTER
+   VERSION 4
 ========================================== */
 
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
 }
 
 body{
@@ -15,20 +20,27 @@ body{
     line-height:1.7;
 }
 
+img{
+    max-width:100%;
+    display:block;
+}
+
 .container{
     width:90%;
-    max-width:1200px;
+    max-width:1280px;
     margin:auto;
 }
 
-/* HEADER */
+/* ==========================
+   HEADER
+========================== */
 
 header{
-    background:#ffffff;
     position:sticky;
     top:0;
     z-index:999;
-    box-shadow:0 2px 15px rgba(0,0,0,.08);
+    background:#fff;
+    box-shadow:0 5px 18px rgba(0,0,0,.08);
 }
 
 nav{
@@ -46,36 +58,34 @@ nav{
 }
 
 .brand img{
-    width:60px;
-    height:60px;
-    object-fit:contain;
+    width:65px;
 }
 
 .brand h2{
     color:#00897B;
-    font-size:22px;
+    font-size:24px;
 }
 
 .brand span{
-    font-size:13px;
     color:#666;
+    font-size:13px;
 }
 
 #navMenu{
     display:flex;
+    gap:30px;
     list-style:none;
-    gap:28px;
 }
 
 #navMenu a{
-    text-decoration:none;
     color:#333;
+    text-decoration:none;
     font-weight:600;
     transition:.3s;
 }
 
 #navMenu a:hover{
-    color:#00897B;
+    color:#009688;
 }
 
 .menu-toggle{
@@ -85,130 +95,126 @@ nav{
     font-size:30px;
     cursor:pointer;
 }
-/* HERO */
 
-/* HERO */
+/* ==========================
+   HERO
+========================== */
 
 .hero{
-    position:relative;
-    min-height:100vh;
-    display:flex;
+    background:#f6fbfc;
+    overflow:hidden;
+}
+
+.hero-grid{
+    display:grid;
+    grid-template-columns:520px 1fr;
     align-items:center;
-
-    background:
-    linear-gradient(
-        90deg,
-        rgba(16,48,63,.72) 0%,
-        rgba(16,48,63,.58) 35%,
-        rgba(16,48,63,.25) 60%,
-        rgba(16,48,63,.08) 100%
-    ),
-    url("3D6C0023-D89A-4B34-A964-53F79D883536.png");
-
-    background-size: contain;
-background-position: center center;
-background-repeat: no-repeat;
-background-color: #0f4c5c;
+    gap:70px;
+    min-height:760px;
 }
 
-.hero-overlay{
-    width:100%;
-    padding:90px 0;
-}
-
-.hero-content{
-    max-width:560px;
-    color:white;
-    text-align:left;
-}
-
-.hero-content h1{
-
+.hero-left h1{
     font-size:68px;
     line-height:1.05;
-    font-weight:800;
+    color:#12384b;
     margin-bottom:25px;
-
-    text-shadow:
-    0 5px 20px rgba(0,0,0,.35);
-
+    font-weight:800;
 }
 
-.hero-content p{
-
-    font-size:23px;
-    line-height:1.7;
-    margin-bottom:40px;
-    color:#f5f5f5;
-
+.hero-left p{
+    font-size:22px;
+    color:#666;
+    margin-bottom:35px;
 }
 
 .hero-buttons{
-
     display:flex;
-    gap:20px;
-    justify-content:flex-start;
+    gap:18px;
     flex-wrap:wrap;
-
+    margin-bottom:35px;
 }
-
-.btn{
-    padding:16px 38px;
-    border-radius:50px;
-}
-/* BUTTONS */
 
 .btn{
     display:inline-block;
     background:#009688;
     color:#fff;
-    padding:15px 35px;
-    border-radius:50px;
     text-decoration:none;
+    padding:16px 36px;
+    border-radius:40px;
     font-weight:600;
     transition:.3s;
-    box-shadow:0 10px 20px rgba(0,150,136,.25);
 }
 
 .btn:hover{
-    transform:translateY(-3px);
     background:#00796B;
+    transform:translateY(-3px);
 }
 
 .btn-outline{
-    background:transparent;
-    border:2px solid #fff;
-    color:#fff;
+    background:white;
+    color:#009688;
+    border:2px solid #009688;
 }
 
 .btn-outline:hover{
-    background:#fff;
-    color:#00897B;
+    background:#009688;
+    color:white;
 }
-/* ==========================================
-   HOME SECTIONS
-========================================== */
+
+.hero-right img{
+    width:100%;
+    border-radius:30px;
+    box-shadow:0 30px 60px rgba(0,0,0,.18);
+}
+
+.clinic-hours{
+    background:white;
+    padding:25px;
+    border-radius:18px;
+    box-shadow:0 15px 35px rgba(0,0,0,.10);
+    max-width:340px;
+}
+
+.clinic-hours h3{
+    color:#009688;
+    margin-bottom:18px;
+}
+
+.hours-row{
+    display:flex;
+    justify-content:space-between;
+    margin:12px 0;
+    border-bottom:1px solid #eee;
+    padding-bottom:10px;
+}
+/* ==========================
+   GENERAL SECTIONS
+========================== */
 
 section{
-    padding:80px 0;
+    padding:90px 0;
 }
 
 .section-header{
     text-align:center;
-    max-width:800px;
-    margin:0 auto 50px;
+    max-width:760px;
+    margin:0 auto 60px;
 }
 
 .section-header h2{
-    font-size:40px;
-    color:#004D40;
-    margin-bottom:15px;
+    font-size:42px;
+    color:#12384b;
+    margin-bottom:18px;
 }
 
 .section-header p{
     color:#666;
     font-size:18px;
 }
+
+/* ==========================
+   FEATURE CARDS
+========================== */
 
 .features{
     display:grid;
@@ -218,24 +224,24 @@ section{
 
 .feature-card{
     background:#fff;
-    padding:35px;
-    border-radius:20px;
+    padding:40px 30px;
+    border-radius:22px;
     text-align:center;
-    box-shadow:0 10px 30px rgba(0,0,0,.08);
-    transition:.3s;
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+    transition:.35s;
 }
 
 .feature-card:hover{
-    transform:translateY(-8px);
+    transform:translateY(-10px);
 }
 
 .feature-card .icon{
-    font-size:50px;
+    font-size:52px;
     margin-bottom:20px;
 }
 
 .feature-card h3{
-    color:#00897B;
+    color:#009688;
     margin-bottom:15px;
 }
 
@@ -243,63 +249,80 @@ section{
     color:#666;
 }
 
+/* ==========================
+   ABOUT PREVIEW
+========================== */
+
 .about-grid{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
-    gap:50px;
+    grid-template-columns:1fr 1fr;
+    gap:70px;
     align-items:center;
 }
 
 .about-grid img{
     width:100%;
-    border-radius:20px;
-    box-shadow:0 15px 35px rgba(0,0,0,.12);
+    border-radius:25px;
+    box-shadow:0 20px 45px rgba(0,0,0,.15);
 }
 
 .about-grid h2{
-    font-size:38px;
-    color:#004D40;
+    font-size:42px;
+    color:#12384b;
     margin-bottom:20px;
 }
 
 .about-grid p{
     margin-bottom:20px;
-    color:#555;
+    color:#666;
 }
-/* ==========================================
-   CTA & FOOTER
-========================================== */
+
+/* ==========================
+   WHY CHOOSE US
+========================== */
+
+.why-us{
+    background:#f3f8fa;
+}
+
+/* ==========================
+   CTA
+========================== */
 
 .cta{
-    background:#00897B;
+    background:linear-gradient(135deg,#009688,#00695c);
     color:#fff;
     text-align:center;
 }
 
 .cta h2{
-    font-size:42px;
+    font-size:46px;
     margin-bottom:15px;
 }
 
 .cta p{
-    font-size:18px;
-    margin-bottom:30px;
+    max-width:700px;
+    margin:auto auto 30px;
 }
 
 .cta .btn{
     background:#fff;
-    color:#00897B;
+    color:#009688;
 }
 
 .cta .btn:hover{
-    background:#f2f2f2;
+    background:#f3f3f3;
 }
 
+/* ==========================
+   FOOTER
+========================== */
+
 footer{
-    background:#003B46;
+    background:#0d2b38;
     color:#fff;
+    padding:70px 20px;
     text-align:center;
-    padding:50px 20px;
 }
 
 footer h2{
@@ -308,256 +331,5 @@ footer h2{
 
 footer p{
     margin:8px 0;
-}
-/* ==========================================
-   MOBILE RESPONSIVE
-========================================== */
-
-@media (.hero{
-
-    min-height:90vh;
-    background-position:center bottom;
-
-}
-
-.hero-overlay{
-
-    padding:120px 0 60px;
-
-}
-
-.hero-content{
-
-    text-align:center;
-    max-width:100%;
-
-}
-
-.hero-content h1{
-
-    font-size:52px;
-
-}
-
-.hero-content p{
-
-    font-size:20px;
-
-}
-
-.hero-buttons{
-
-    justify-content:center;
-
-}){
-
-    .menu-toggle{
-        display:block;
-    }
-
-    #navMenu{
-        display:none;
-        flex-direction:column;
-        width:100%;
-        margin-top:20px;
-        background:#ffffff;
-        border-radius:12px;
-        overflow:hidden;
-        box-shadow:0 10px 25px rgba(0,0,0,.08);
-    }
-
-    #navMenu.active{
-        display:flex;
-    }
-
-    #navMenu li{
-        border-bottom:1px solid #f1f1f1;
-    }
-
-    #navMenu li:last-child{
-        border-bottom:none;
-    }
-
-    #navMenu a{
-        display:block;
-        padding:16px;
-        text-align:center;
-    }
-
-    nav{
-        flex-wrap:wrap;
-    }
-
-    .brand span{
-        display:none;
-    }
-
-    .hero{
-        min-height:75vh;
-    }
-
-    .hero-content h1{
-        font-size:38px;
-    }
-
-    .hero-content p{
-        font-size:18px;
-    }
-
-    .section-header h2,
-    .about-grid h2,
-    .cta h2{
-        font-size:30px;
-    }
-
-    .hero-buttons{
-        flex-direction:column;
-        align-items:center;
-    }
-
-    .btn{
-        width:220px;
-        text-align:center;
-    }
-}
-/* ==========================
-   OUR MEDICAL TEAM
-========================== */
-
-.team-section{
-    max-width:1200px;
-    margin:auto;
-    padding:60px 20px;
-}
-
-.team-section h2{
-    color:#0b5fa5;
-    text-align:center;
-    margin:50px 0 30px;
-    font-size:2rem;
-}
-
-.team-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-    gap:25px;
-    margin-bottom:30px;
-}
-
-.doctor-card{
-    background:#fff;
-    border-radius:18px;
-    padding:30px 20px;
-    text-align:center;
-    box-shadow:0 8px 20px rgba(0,0,0,.08);
-    transition:.3s;
-}
-
-.doctor-card:hover{
-    transform:translateY(-8px);
-}
-
-.doctor-photo{
-    width:120px;
-    height:120px;
-    margin:0 auto 20px;
-    border-radius:50%;
-    background:#eaf5ff;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    font-size:60px;
-}
-
-.doctor-card h3{
-    color:#0b5fa5;
-    margin-bottom:10px;
-}
-
-.specialty{
-    color:#16a34a;
-    font-weight:bold;
-    margin-bottom:5px;
-}
-
-.position{
-    color:#666;
-    font-style:italic;
-    margin-bottom:15px;
-}
-
-.doctor-card p{
-    line-height:1.6;
-}
-/* ==========================================
-   TEAM PAGE V4
-========================================== */
-
-.team-hero{
-    min-height:45vh;
-}
-
-.team-title{
-    text-align:center;
-    color:#004D40;
-    font-size:34px;
-    margin:60px 0 30px;
-}
-
-.team-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-    gap:30px;
-    margin-bottom:40px;
-}
-
-.doctor-card{
-    background:#fff;
-    border-radius:22px;
-    padding:35px 25px;
-    text-align:center;
-    box-shadow:0 10px 30px rgba(0,0,0,.08);
-    transition:.35s;
-    border-top:6px solid #009688;
-}
-
-.doctor-card:hover{
-    transform:translateY(-10px);
-    box-shadow:0 18px 40px rgba(0,0,0,.12);
-}
-
-.doctor-photo{
-    width:130px;
-    height:130px;
-    margin:0 auto 20px;
-    border-radius:50%;
-    background:#E8F5E9;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    font-size:65px;
-    border:5px solid #009688;
-}
-
-.doctor-card h3{
-    color:#004D40;
-    margin-bottom:10px;
-}
-
-.specialty{
-    color:#009688;
-    font-weight:700;
-    margin-bottom:6px;
-}
-
-.position{
-    color:#777;
-    font-style:italic;
-    margin-bottom:15px;
-}
-.doctor-photo img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 50%;
+    color:#ddd;
 }
