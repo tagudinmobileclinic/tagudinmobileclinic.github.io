@@ -90,8 +90,11 @@ nav{
 .hero{
     min-height:90vh;
     background:
-        linear-gradient(rgba(0,80,90,.35), rgba(0,80,90,.35)),
-        url("3D6C0023-D89A-4B34-A964-53F79D883536.png") center center/cover no-repeat;
+        linear-gradient(
+            rgba(0,55,70,.48),
+            rgba(0,70,90,.48)
+        ),
+        url("3D6C0023-D89A-4B34-A964-53F79D883536.png") center center / cover no-repeat;
     display:flex;
     align-items:center;
     justify-content:center;
