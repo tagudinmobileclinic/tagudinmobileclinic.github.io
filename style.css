@@ -333,3 +333,344 @@ footer p{
     margin:8px 0;
     color:#ddd;
 }
+/* ==========================
+   TEAM PAGE
+========================== */
+
+.team-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:35px;
+}
+
+.team-card{
+    background:#fff;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+    transition:.35s;
+    text-align:center;
+}
+
+.team-card:hover{
+    transform:translateY(-8px);
+}
+
+.team-card img{
+    width:100%;
+    height:300px;
+    object-fit:cover;
+}
+
+.team-card-content{
+    padding:25px;
+}
+
+.team-card h3{
+    color:#12384b;
+    margin-bottom:8px;
+}
+
+.team-card h4{
+    color:#009688;
+    margin-bottom:15px;
+    font-weight:600;
+}
+
+.team-card p{
+    color:#666;
+    font-size:15px;
+}
+/* ==========================
+   SERVICES PAGE
+========================== */
+
+.services-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:35px;
+}
+
+.service-card{
+    background:#fff;
+    border-radius:20px;
+    padding:35px 30px;
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+    transition:.35s;
+    text-align:center;
+}
+
+.service-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 20px 45px rgba(0,0,0,.12);
+}
+
+.service-icon{
+    width:80px;
+    height:80px;
+    margin:0 auto 20px;
+    border-radius:50%;
+    background:#e6f7f5;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:36px;
+}
+
+.service-card h3{
+    color:#12384b;
+    margin-bottom:15px;
+    font-size:24px;
+}
+
+.service-card p{
+    color:#666;
+    font-size:16px;
+    line-height:1.8;
+}
+/* ==========================
+   GALLERY
+========================== */
+
+.gallery-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:25px;
+}
+
+.gallery-grid img{
+    width:100%;
+    height:260px;
+    object-fit:cover;
+    border-radius:18px;
+    box-shadow:0 15px 35px rgba(0,0,0,.10);
+    transition:.35s;
+}
+
+.gallery-grid img:hover{
+    transform:scale(1.04);
+}
+/* ==========================
+   CONTACT PAGE
+========================== */
+
+.contact-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:50px;
+    align-items:start;
+}
+
+.contact-info{
+    background:#fff;
+    padding:35px;
+    border-radius:20px;
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+}
+
+.contact-info h3{
+    color:#12384b;
+    margin-bottom:20px;
+    font-size:28px;
+}
+
+.contact-info p{
+    margin-bottom:18px;
+    color:#666;
+    line-height:1.8;
+}
+
+.contact-info strong{
+    color:#009688;
+}
+
+.contact-map iframe{
+    width:100%;
+    height:450px;
+    border:none;
+    border-radius:20px;
+    box-shadow:0 15px 35px rgba(0,0,0,.10);
+}
+/* ==========================
+   ANIMATIONS
+========================== */
+
+.feature-card,
+.service-card,
+.team-card,
+.gallery-grid img,
+.about-grid img,
+.hero-right img{
+    transition:all .35s ease;
+}
+
+.feature-card:hover,
+.service-card:hover,
+.team-card:hover{
+    transform:translateY(-10px);
+}
+
+.about-grid img:hover,
+.hero-right img:hover,
+.gallery-grid img:hover{
+    transform:scale(1.03);
+}
+/* ==========================
+   MOBILE RESPONSIVE
+========================== */
+
+@media (max-width:991px){
+
+    .container{
+        width:92%;
+    }
+
+    /* Navigation */
+
+    nav{
+        position:relative;
+        padding:15px 0;
+    }
+
+    .menu-toggle{
+        display:block;
+    }
+
+    #navMenu{
+        display:none;
+        position:absolute;
+        top:100%;
+        left:0;
+        width:100%;
+        background:#fff;
+        flex-direction:column;
+        padding:20px;
+        gap:18px;
+        box-shadow:0 15px 35px rgba(0,0,0,.10);
+        border-radius:0 0 15px 15px;
+    }
+
+    #navMenu.active{
+        display:flex;
+    }
+
+    /* Hero */
+
+    .hero{
+        padding:60px 0;
+    }
+
+    .hero-grid{
+        grid-template-columns:1fr;
+        gap:40px;
+        min-height:auto;
+        text-align:center;
+    }
+
+    .hero-left{
+        order:2;
+    }
+
+    .hero-right{
+        order:1;
+    }
+
+    .hero-left h1{
+        font-size:42px;
+    }
+
+    .hero-left p{
+        font-size:18px;
+    }
+
+    .hero-buttons{
+        justify-content:center;
+    }
+
+    .clinic-hours{
+        margin:30px auto 0;
+    }
+
+    /* About */
+
+    .about-grid{
+        grid-template-columns:1fr;
+        gap:40px;
+    }
+
+    .about-grid h2{
+        font-size:34px;
+    }
+
+    /* Contact */
+
+    .contact-grid{
+        grid-template-columns:1fr;
+    }
+
+    .contact-map iframe{
+        height:350px;
+    }
+
+    /* Sections */
+
+    section{
+        padding:70px 0;
+    }
+
+    .section-header h2{
+        font-size:34px;
+    }
+
+    .cta h2{
+        font-size:34px;
+    }
+
+}
+
+@media (max-width:600px){
+
+    .brand h2{
+        font-size:20px;
+    }
+
+    .brand span{
+        display:none;
+    }
+
+    .hero-left h1{
+        font-size:34px;
+    }
+
+    .hero-left p{
+        font-size:16px;
+    }
+
+    .btn{
+        width:100%;
+        text-align:center;
+    }
+
+    .hero-buttons{
+        flex-direction:column;
+    }
+
+    .clinic-hours{
+        max-width:100%;
+    }
+
+    .feature-card,
+    .service-card,
+    .team-card{
+        padding:25px;
+    }
+
+    .gallery-grid{
+        grid-template-columns:1fr;
+    }
+
+    footer{
+        padding:50px 20px;
+    }
+
+}
