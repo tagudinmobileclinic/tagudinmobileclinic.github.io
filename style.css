@@ -226,10 +226,11 @@ nav{
     background:rgba(0,0,0,.55);
 }
 
-.hero-text{
-    max-width:320px;
-    margin:0 auto;
-    text-align:center;
+.hero-text h1{
+    font-size:18vw;
+    line-height:0.95;
+    font-weight:800;
+    margin-bottom:15px;
 }
 
 .hero-text h1{
@@ -239,11 +240,14 @@ nav{
 }
 
 .hero-text p{
-    font-size:20px;
+    font-size:18px;
+    line-height:1.5;
+    margin-bottom:25px;
 }
 
 .hero-buttons{
-    justify-content:center;
+    gap:15px;
+    margin-bottom:25px;
 }
 
 .clinic-hours{
