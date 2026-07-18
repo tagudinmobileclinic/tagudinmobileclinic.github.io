@@ -225,16 +225,15 @@ nav{
 .hero-overlay{
     background:rgba(0,0,0,.55);
 }
-
-.hero-text h1{
-    font-size:18vw;
-    line-height:0.95;
-    font-weight:800;
-    margin-bottom:15px;
+.hero-text{
+    width:100%;
+    max-width:320px;
+    margin:0 auto;
+    text-align:center;
 }
 
 .hero-text h1{
-    font-size:32px;
+    font-size:44px;
     line-height:1.15;
     margin-bottom:15px;
 }
