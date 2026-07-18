@@ -105,9 +105,10 @@ nav{
     ),
     url("3D6C0023-D89A-4B34-A964-53F79D883536.png");
 
-    background-size:cover;
-    background-position:center bottom;
-    background-repeat:no-repeat;
+    background-size: contain;
+background-position: center center;
+background-repeat: no-repeat;
+background-color: #0f4c5c;
 }
 
 .hero-overlay{
