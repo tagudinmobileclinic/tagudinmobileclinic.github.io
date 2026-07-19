@@ -61,6 +61,7 @@ nav{
     display:flex;
     flex-direction:column;
     justify-content:center;
+    min-width:220px;
 }
 
 .brand div{
@@ -784,7 +785,7 @@ footer p{
     margin-top:30px;
 }
 
-..hero-contact-btn{
+.hero-contact-btn{
     display:inline-block;
     padding:14px 36px;
     border-radius:50px;
@@ -806,8 +807,8 @@ footer p{
 @media (max-width:768px){
 
 .hero-content h1{
-    font-size:52px;
-    line-height:1.05;
+    font-size:42px;
+    line-height:1.1;
 }
 
 .hero-content p{
