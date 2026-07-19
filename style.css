@@ -855,4 +855,47 @@ footer p{
 .hero-btn:hover{
     background:rgba(255,255,255,.28);
 }
+/* ===== FINAL MOBILE FIX ===== */
 
+.hero-contact-btn{
+    display:inline-flex !important;
+    justify-content:center;
+    align-items:center;
+    padding:14px 32px !important;
+    border-radius:999px !important;
+    background:rgba(255,255,255,.18) !important;
+    backdrop-filter:blur(14px);
+    -webkit-backdrop-filter:blur(14px);
+    border:1px solid rgba(255,255,255,.35);
+    color:#fff !important;
+    text-decoration:none !important;
+    font-weight:700;
+    box-shadow:0 10px 25px rgba(0,0,0,.25);
+}
+
+.hero-contact-btn:hover{
+    background:rgba(255,255,255,.28);
+}
+
+@media (max-width:768px){
+
+.hero-content h1{
+    font-size:42px !important;
+    line-height:1.1;
+}
+
+.clinic-hours{
+    max-width:240px !important;
+    padding:12px !important;
+    border-radius:16px;
+}
+
+.clinic-hours h3{
+    font-size:18px !important;
+}
+
+.clinic-hours table{
+    font-size:13px !important;
+}
+
+}
