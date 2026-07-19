@@ -669,9 +669,11 @@ footer p{
         font-size:20px;
     }
 
-    .brand span{
-        display:none;
-    }
+  .brand span{
+    display:block;
+    font-size:13px;
+    line-height:1.3;
+}
 
     .hero-left h1{
         font-size:34px;
