@@ -854,3 +854,31 @@ footer p{
 .hero-btn:hover{
     background:rgba(255,255,255,.28);
 }
+@media (max-width:768px){
+
+.hero-content h1{
+    font-size:52px;
+    line-height:1.05;
+}
+
+.hero-content p{
+    font-size:17px;
+    line-height:1.6;
+}
+
+.clinic-hours{
+    max-width:330px;
+    margin:25px 0 0;
+    padding:20px;
+}
+
+.clinic-hours h3{
+    font-size:24px;
+    text-align:left;
+}
+
+.clinic-hours table{
+    font-size:18px;
+}
+
+}
