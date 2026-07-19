@@ -70,24 +70,25 @@ nav{
 }
 
 .brand img{
-    width:65px;
-    height:65px;
+    width:85px;
+    height:85px;
     object-fit:contain;
 }
 
 
 .brand h2{
     color:#00897B;
-    font-size:34px;
+    font-size:28px;
     font-weight:800;
     margin-bottom:2px;
+    line-height:1;
 }
 
 .brand span{
     color:#555;
-    font-size:17px;
+    font-size:15px;
     font-weight:500;
-    line-height:1.3;
+    white-space:nowrap;
 }
 
 #navMenu{
