@@ -43,10 +43,11 @@ header{
 }
 
 nav{
-    height:90px;
+    min-height:90px;
     display:flex;
     align-items:center;
     justify-content:space-between;
+    flex-wrap:nowrap;
 }
 
 .brand{
@@ -54,7 +55,12 @@ nav{
     align-items:center;
     gap:15px;
     text-decoration:none;
-    flex-direction:row;
+    flex-shrink:0;
+}
+.brand-text{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
 }
 
 .brand div{
