@@ -782,7 +782,7 @@ footer p{
     margin-top:30px;
 }
 
-.hero-btn{
+..hero-contact-btn{
     display:inline-block;
     padding:14px 36px;
     border-radius:50px;
@@ -797,7 +797,7 @@ footer p{
     transition:.3s;
 }
 
-.hero-btn:hover{
+.hero-contact-btn:hover{
     transform:translateY(-3px);
     background:rgba(255,255,255,.28);
 }
