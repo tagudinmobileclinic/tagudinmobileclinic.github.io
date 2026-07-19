@@ -755,13 +755,6 @@ footer p{
     font-size:14px;
 }
 
-.hero-right img{
-    width:100%;
-    border-radius:30px;
-    box-shadow:0 30px 60px rgba(0,0,0,.18);
-}
-
-@media(max-width:900px){
 
 @media(max-width:900px){
 
@@ -782,4 +775,31 @@ footer p{
     font-size:16px;
 }
 
+}
+.hero-contact-btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+    padding:15px 40px;
+    border-radius:999px;
+    text-decoration:none;
+    color:#fff;
+    font-weight:700;
+    font-size:17px;
+
+    background:rgba(255,255,255,.18);
+    border:1px solid rgba(255,255,255,.35);
+
+    backdrop-filter:blur(15px);
+    -webkit-backdrop-filter:blur(15px);
+
+    box-shadow:0 10px 30px rgba(0,0,0,.25);
+
+    transition:.3s;
+}
+
+.hero-contact-btn:hover{
+    transform:translateY(-3px) scale(1.03);
+    background:rgba(255,255,255,.28);
 }
