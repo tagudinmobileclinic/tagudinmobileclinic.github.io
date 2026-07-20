@@ -989,17 +989,49 @@ footer p{
 }
 
 .staff-photo{
-    width:70px;
-    height:70px;
-    font-size:34px;
+    width:120px;
+    height:120px;
+    margin:0 auto 15px;
+    border-radius:50%;
+    overflow:hidden;
+    background:#E8F5E9;
+    border:4px solid #009688;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    font-size:58px;
 }
 
-.staff-card h3{
-    font-size:16px;
+.staff-card{
+    background:#fff;
+    border-radius:20px;
+    padding:25px 18px;
+    text-align:center;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
 }
 
 .staff-card .specialty{
     font-size:13px;
+}
+
+}
+/* ==========================
+   TEAM GRID
+========================== */
+
+.team-grid{
+    display:grid;
+    grid-template-columns:repeat(2, minmax(0,1fr));
+    gap:20px;
+    margin-bottom:40px;
+}
+
+@media (max-width:768px){
+
+.team-grid{
+    grid-template-columns:repeat(2, minmax(0,1fr));
 }
 
 }
